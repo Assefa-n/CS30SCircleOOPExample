@@ -7,13 +7,13 @@ import java.text.NumberFormat;
  *  Name:           Sveinson
  *  Class:          CS30S
  * 
- *  Assignment:     Ax Qy
+ *  Assignment:     Circle OOP driver code
  * 
- *  Description:    Place a short description of your program here
+ *  Description:    driver code for the Circle class example
  * 
  *************************************************************/
 
-public class ClientTemplate {
+public class CircleDriver {
 
     public static void main(String[] args) throws IOException{
     // ***** constants *******
@@ -47,7 +47,7 @@ public class ClientTemplate {
         banner = "*****************************" + nl;
         banner += "Name:        Sveinson" + nl;
         banner += "Class:       CS30S" + nl;
-        banner += "Assignment:  Ax Qy" + nl;
+        banner += "Assignment:  Circle OOP Example" + nl;
         banner += "*****************************" + nl + nl;
         
         System.out.println(banner);
@@ -55,11 +55,18 @@ public class ClientTemplate {
     
     // ***** Get Input *****
     
-        // prompt for input
-        // read input from keyboard
-        // echo input back to console window
-    
     // ***** Main Processing *****
+    
+    
+        Circle c1 = new Circle();       // instantiate a new Circle object
+        Circle c2 = new Circle(4.45);   // with an argument
+        
+        System.out.println("Cirlce 1: " + c1.getId() + ", " + c1.getRadius());
+        c1.setRadius(3.0);
+        System.out.println("Cirlce 1: " + c1.getId() + ", " + c1.getRadius());
+        System.out.format("Circle 1 Area: %8.3f%s", c1.getArea(), nl);
+        
+        System.out.println("Cirlce 2: " + c2.getId() + ", " + c2.getRadius());
     
     // ***** Print Formatted Output *****
     
