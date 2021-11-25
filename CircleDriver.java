@@ -67,6 +67,12 @@ public class CircleDriver {
         System.out.format("Circle 1 Area: %8.3f%s", c1.getArea(), nl);
         
         System.out.println("Cirlce 2: " + c2.getId() + ", " + c2.getRadius());
+        
+        System.out.println();
+        System.out.println("**** Print Circle Details Using toString()" + nl);
+        System.out.println(c1);
+        
+        
     
     // ***** Print Formatted Output *****
     

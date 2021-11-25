@@ -78,8 +78,7 @@ public class Circle {
     public double getRadius(){
         return radius;
     }// end getRadius
-    
-    
+       
     //*** Setters ***
     /*****************************************
     * Description: set the value of the radius
@@ -138,7 +137,7 @@ public class Circle {
     * ****************************************/
     @Override
     public String toString(){
-        String st = "";
+        String nl = System.lineSeparator(); 
         
         /* build a string that displays
          * state of the circle i.e.
@@ -146,7 +145,15 @@ public class Circle {
          * in some formatted fashion
          * for some extra challenge use a StringBuilder object
          */
-        return st;
+        StringBuilder s = new StringBuilder();
+        
+        s.append(String.format("%-10s%10d%s", "Circle:", this.getId(), nl));
+        s.append(String.format("%-10s%10.3f%s", "Radius:", this.getRadius(), nl));
+        s.append(String.format("%-10s%10.3f%s", "Area:", this.getArea(), nl));
+        s.append(String.format("%-10s%10.3f%s", "Diameter:", this.getDiameter(), nl));
+        s.append(String.format("%-10s%10.3f%s", "Circ:", this.getCircumference(), nl));
+        
+        return s.toString();
     }// end toString
     
     
